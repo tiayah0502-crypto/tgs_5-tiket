@@ -9,24 +9,24 @@ void tiket() {
 
     do {
         cout << "=== TIKET BUS ===" << endl;
-        cout << "1. Malang - Surabaya Rp15000" << endl;
-        cout << "2. Malang - Pasuruan Rp20000" << endl;
-        cout << "3. Malang - Jombang Rp25000" << endl;
+        cout << "1. Malang - Kediri Rp20000" << endl;
+        cout << "2. Malang - Blitar Rp25000" << endl;
+        cout << "3. Malang - Tulungagung Rp30000" << endl;
 
         cout << "Pilih tujuan: ";
         cin >> pilih;
 
         if (pilih == 1) {
-            tujuan = "Malang - Surabaya";
-            harga = 15000;
-        }
-        else if (pilih == 2) {
-            tujuan = "Malang - Pasuruan";
+            tujuan = "Malang - Kediri";
             harga = 20000;
         }
-        else if (pilih == 3) {
-            tujuan = "Malang - Jombang";
+        else if (pilih == 2) {
+            tujuan = "Malang - Blitar";
             harga = 25000;
+        }
+        else if (pilih == 3) {
+            tujuan = "Malang - Tulungagung";
+            harga = 30000;
         }
         else {
             cout << "Pilihan salah!" << endl;
