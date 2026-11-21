@@ -11,9 +11,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - uses: ilammy/msvc-dev-cmd@v1
+      - name: Setup Compiler
+        uses: ilammy/msvc-dev-cmd@v1
 
       - name: Build EXE
         run: cl /EHsc /std:c++17 main.cpp /Fe:tiket.exe
